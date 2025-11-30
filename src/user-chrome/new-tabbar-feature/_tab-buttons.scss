@@ -111,7 +111,8 @@
   }
 
   #tabs-newtab-button {
-    margin-inline-start: 0px !important;
+    margin-inline-start: -2px !important;
+
   }
 }
 
@@ -126,9 +127,12 @@
 #tabs-newtab-button,
 #new-tab-button {
   &> :is(.toolbarbutton-icon, .toolbarbutton-badge-stack) {
-    width: 30px !important;
-    height: 30px !important;
-    padding: 8px !important;
+    // fixes #132
+    width: calc(var(--tab-min-height) - 11px) !important;
+    height: calc(var(--tab-min-height) - 11px) !important;
+    padding: 7px !important;
+    margin-inline-start: -3px !important;
+    box-shadow: unset !important;
   }
 }
 
