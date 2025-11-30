@@ -208,7 +208,8 @@
 @include moz-pref-media("userChrome.ui-chrome-refresh") {
   @include moz-pref-media("not userChrome.ui-force-old-icons") {
     #unified-extensions-button>image {
-      transform: scale(1.25) !important;
+      // fixes https://github.com/edelvarden/material-fox-updated/issues/132#issuecomment-3592591220
+      padding: calc(var(--toolbarbutton-inner-padding) - 2px) !important;
     }
   }
 }
