@@ -10,6 +10,8 @@ compatibility.ini
 containers.json
 content-prefs.sqlite
 cookies.sqlite
+cookies.sqlite-shm
+cookies.sqlite-wal
 domain_to_categories.sqlite
 domain_to_categories.sqlite-journal
 ExperimentStoreData.json
@@ -22,6 +24,10 @@ favicons.sqlite-wal
 formhistory.sqlite
 handlers.json
 key4.db
+Telemetry.ShutdownTime.txt
+webappsstore.sqlite
+webappsstore.sqlite-shm
+webappsstore.sqlite-wal
 logins.db
 parent.lock
 permissions.sqlite
@@ -35,6 +41,8 @@ places_semantic.sqlite-shm
 places_semantic.sqlite-wal
 protections.sqlite
 search.json.mozlz4
+activity-stream.inferred_personalization_feed.json
+activity-stream.weather_feed.json
 sessionCheckpoints.json
 SiteSecurityServiceState.bin
 storage.sqlite
@@ -62,6 +70,8 @@ datareporting
 crashes
 cache2
 bookmarkbackups
+saved-telemetry-pings
+chrome_debugger_profile
 
 # Logs
 logs
