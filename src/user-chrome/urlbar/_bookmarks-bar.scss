@@ -4,7 +4,7 @@
   padding: var(--bookmark-block-padding) 6px !important;
 }
 
-// bookmarks bar haight
+// bookmarks bar height
 :root,
 #PersonalToolbar {
   --bookmarks-toolbar-overlapping-browser-heigh: max(36px, 2em) !important;
@@ -69,14 +69,21 @@
   padding-inline: 4px !important;
 }
 
+// fix margin for bookmark item in menu
+.toolbar-menupopup :is(menu, menuitem).bookmark-item {
+  margin: 0 !important;
+}
+
+// fixes the import button not being vertically centered
+#PersonalToolbar toolbarbutton#import-button {
+  margin-bottom: 4px !important;
+  margin-left: 2px !important;
+}
+
 // bookmart item max width (not in folder)
 toolbarbutton.bookmark-item:not(.subviewbutton) {
   max-width: 12em !important; // default: 13em
-}
-
-//fix margin for bookmark item in menu
-.toolbar-menupopup :is(menu, menuitem).bookmark-item {
-  margin: 0 !important;
+  margin: 3px !important;
 }
 
 [dir="ltr"] {
